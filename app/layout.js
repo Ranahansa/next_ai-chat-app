@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
+import React from 'react'; // Add the missing import statement for React
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,11 +14,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="text-white bg-gray-300 dark:bg-gray-500">
+        <div className='flex flex-col justify-between min-h-screen md:mx-auto md:container sm:mx-auto sm:container'>
         <Navbar />
         {children}
         <Footer />
-        </body>
+        </div>
+      </body>
     </html>
   )
 }
