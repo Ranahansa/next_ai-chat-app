@@ -39,7 +39,7 @@ const Links = () => {
                         <NavLink item={{title : 'Admin', path : '/admin'}} />
                     )
                 }
-                <button className='p-1 border border-red-500 rounded-lg text-md'>LogOut</button>
+                <button className='p-1 border border-white rounded-lg text-md'>LogOut</button>
                 </>
                 ) : (
                     <NavLink item={{title : 'Login', path : '/login'}} />
