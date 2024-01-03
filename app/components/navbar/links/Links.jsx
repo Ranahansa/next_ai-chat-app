@@ -26,10 +26,10 @@ const Links = () => {
     const isAdmin = true
     
     return (
-        <div className='flex items-center gap-x-9'>
+        <div className='flex items-center gap-x-9 focus:outline-none focus:right-0 focus:border-none'>
             {
                 links.map((link) => (
-                    <NavLink item={link} key={link.title} />
+                    <NavLink className='focus:outline-none focus:ring-0 focus:border-none' item={link} key={link.title} />
                 ))
             }{
                 session ? (

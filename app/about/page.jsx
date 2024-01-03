@@ -5,7 +5,7 @@ const AboutPage = () => {
     return (
         <div>
             
-            <div>
+            <div className='pb-[]'>
                 <p className='text-xl font-bold text-sky-300'>About Agency</p><br/>
                 <p className='text-6xl font-bold tex-white'>We <span className='text-red-700'>create</span> digital ideas <br/>That are bigger , bolder , <br/>Braver and better.</p>
                 <br/>
@@ -18,7 +18,7 @@ const AboutPage = () => {
                 <Image src="/about.png" width={400} height={300} />
             </div>
                     <br/> 
-    <div className="relative flex flex-row justify-between top-[90px]">
+    <div className="relative flex flex-row justify-between top-[90px] ">
         <div className="mb-2">
             <p className="text-3xl font-bold text-sky-800">
                 10 K+
